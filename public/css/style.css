@@ -1,0 +1,436 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background: radial-gradient(circle,#f4d2ad, #fffefd);
+    color: #333;
+    
+}
+
+header {
+    display: flex;
+    flex-direction:flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #03135a;
+    color: white;
+    border-bottom: 4px solid #000000;
+}
+
+header .logo-title {
+    display:flex;
+    align-items: center;
+}
+
+header .logo-title img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    border-radius: 50%;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+header .logo-title h1{
+    font-size: 25px;
+    letter-spacing: 2px;
+}
+
+h1 {
+    font-size: 2rem;
+    letter-spacing: 2px;
+}
+
+header .nav-menu {
+    display: flex;
+    gap: 10px;
+}
+
+header .nav-menu a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 40px;
+}
+
+.nav-menu a:hover {
+    background-color: #368ec1;
+    color: white;
+}
+
+.body-content {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    background-image:url('../images/awal.jpg');
+    background-size: cover;
+    background-position: center;
+    margin:0;
+    width:100vw;
+    padding-top: 80px;
+}
+
+.body-content .tampilanAwal{
+    text-align: center;
+}
+
+.body-content .box{
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    padding: 20px 60px;
+    text-align: center;
+    display: inline-block;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+
+.body-content h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+.body-content p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+.body-content .explore-btn {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.4s ease;
+}
+
+.body-content .explore-btn:hover{
+    background-color: hsl(243, 100%, 41%);
+    font-weight: bold;
+}
+
+.aboutNHKBP{
+    display: block;
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #e7e7e6;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+    text-align: center;
+    clear: both;
+}
+
+.aboutNHKBP h2{
+    color:#03135a;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.aboutNHKBP p{
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.7;
+    text-align: justify;
+}
+
+.visi h2{
+    color:#03135a;
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.visi p{
+    font-size: 1rem;
+    color:#333;
+    line-height: 1.7;
+    text-align: center;
+}
+
+.visi ul{
+    list-style:none;
+    padding-left: 20px;
+    margin-top: 10px;
+    
+}
+
+.visi ul li {
+    margin-bottom: 3px;
+}
+
+main {
+    display: flex;
+    padding: 20px;
+    max-width: 100%;
+    margin: 20px auto;
+}
+
+aside {
+    width: 25%;
+    background-color: #E6F2FF;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin-right: 20px;
+}
+
+aside h2 {
+    color: #03135a;
+    margin-bottom: 10px;
+    font-size: 1.4rem;
+}
+
+aside h2 a {
+    text-decoration: none; 
+    color: inherit;
+    font-size: inherit;
+    font-weight: inherit; 
+}
+
+aside h2 a:hover {
+    text-decoration: underline;
+    color: #368ec1; 
+}
+
+aside ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+aside ul li {
+    margin-bottom: 10px;
+}
+
+aside ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+aside ul li a:hover {
+    background-color: #368ec1;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.content {
+    width: 75%;
+    background-color: #F5F5F5;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.content h2 {
+    color: #03135a;
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+}
+
+.content p {
+    margin-bottom: 20px;
+    line-height: 1.7;
+    text-align: justify;
+}
+
+.maplapangan {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+.maplapangan table{
+    width: 80%;
+    border-collapse: collapse;
+    background-color: #f0f8ff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.maplapangan th,td{
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    color: #03135a;
+    font-size: 1rem;
+}
+
+.maplapangan th {
+   background-color: #368ec1;
+   color: white;
+   font-weight: bold;
+}
+
+.maplapangan tr{
+    background-color: white;
+}
+.maplapangan tr:hover {
+    background-color: #e0f2f9;
+}
+
+.maplapangan tr:last-child td{
+    border-bottom: none ;
+}
+
+.church-img {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.committee-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.member {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 15px;
+    flex-basis: 150px;
+    align-items: center;
+}
+
+.member .profile-pic {
+    width: 200px;
+    height: 200px;
+    border-radius: 10%;
+    margin-bottom: 10px;
+    vertical-align: middle;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    object-fit: cover;
+    border: 4px solid transparent;
+    background-image: linear-gradient(white, white),
+                      linear-gradient(45deg, #f06902, #fbac66);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    transition: transform 0.3s ease, background-image 0.3s ease;
+}
+
+.member .profile-pic:hover{
+    transform: scale(1.1);
+}
+
+.contact {
+    text-align: center;
+}
+
+.contact img {
+    width: 200px;
+    height: 200px;
+    transition: transform 0.3s ease;
+}
+
+.contact img:hover {
+    transform: scale(1.05);
+}
+
+footer {
+    background-color: #03135a;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    border-top: 4px solid #000000;
+    position: relative;
+    margin-top: 0px;
+    font-size: 0.9rem;
+}
+
+footer p {
+    margin: 0;
+}
+
+a:hover {
+    text-decoration: solid;
+    color: #368ec1;
+}
+
+.join-form-section {
+    max-width: 600px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.join-form-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.join-form-section form {
+    display: flex;
+    flex-direction: column;
+}
+
+.join-form-section label {
+    margin-bottom: 5px;
+}
+
+.join-form-section input[type="text"],
+.join-form-section input[type="date"],
+.join-form-section input[type="tel"],
+.join-form-section input[type="submit"] {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s;
+}
+
+.join-form-section input[type="text"]:focus,
+.join-form-section input[type="date"]:focus,
+.join-form-section input[type="tel"]:focus {
+    border-color: #368ec1;
+}
+
+.join-form-section .gender-options {
+    margin-bottom: 15px;
+}
+
+.join-form-section input[type="radio"] {
+    margin-right: 5px;
+}
+
+.join-form-section input[type="submit"] {
+    background-color: #368ec1;
+    color: white;
+    cursor: pointer;
+    border: none;
+}
+
+.join-form-section input[type="submit"]:hover {
+    background-color: #2980b9;
+}
